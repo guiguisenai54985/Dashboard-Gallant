@@ -1,7 +1,7 @@
 <?php 
 /* incluindo o arquivo com os 
 dados do banco de dados */
-require_once "C:/xampp/htdocs/backend/mysql.php";
+require_once "C:/xampp/htdocs/Dashboard-Gallant/admin/backend/mysql.php";
 
 /* função de conexão com o banco */
 function dbcon(){
