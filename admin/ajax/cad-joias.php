@@ -21,6 +21,6 @@ $tamanho = $_POST['tamanho'];
 $parcelamento = $_POST['parcelamento'];
 $linkImagem = $_POST['linkImagem'];
 
-$salvar = $conexao -> query("INSERT INTO `cadastro de joias `(`codigo`, `nomeJoia`, `fabricacao`, `genero`, `marca`, `garantia`, `preco`,`precoVenda`, `quantidade`, `fornecedor`, `modelo`, `material`, `tamanho`, `parcelamento`,`linkImagem`");
+$salvar = $conexao -> query("INSERT INTO `cadastro de joias `(`codigo`, `nomeJoia`, `fabricacao`, `genero`, `marca`, `garantia`, `preco`,`precoVenda`, `quantidade`, `fornecedor`, `modelo`, `material`, `tamanho`, `parcelamento`,`linkImagem`)
 VALUES ('$codigo', '$nomeJoia', '$fabricacao', '$genero', '$marca', '$garantia',  '$preco', '$precoVenda', '$quantidade', '$fornecedor', '$modelo', '$material', '$tamanho', '$parcelamento', '$linkImagem')");
 ?>

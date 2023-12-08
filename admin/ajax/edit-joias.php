@@ -4,6 +4,7 @@ require_once "C:/xampp\htdocs\Gallant\admin\backend/functions.php";
 
 dbcon();
 $id = $_POST['id'];
+$codigo = $_POST['codigo'];
 $nomeJoia = $_POST['nomeJoia'];
 $fabricacao = $_POST['fabricacao'];
 $genero = $_POST['genero'];
@@ -16,8 +17,10 @@ $fornecedor = $_POST['fornecedor'];
 $modelo = $_POST['modelo'];
 $material = $_POST['material'];
 $tamanho = $_POST['tamanho'];
-$parcela = $_POST['parcela'];
+$parcelamento = $_POST['parcelamento'];
 $linkImagem = $_POST['linkImagem'];
 
-$salvar = $conexao -> query("UPDATE `cadastro de joias` SET `nomeJoia`='$nomeJoia',`fabricacao`='$fabricacao',`genero`='$genero',`marca`='marca',`garantia`='garantia',`preco`='preco',`precoVenda`='precoVenda',`quantidade`='quantidade',`fornecedor`='fornecedor',`modelo`='modelo',`material`='material',`tamanho`='tamanho',`parcela`='parcela',`linkImagem`='linkImagem' WHERE id = 'id' ");
+$salvar = $conexao -> query("UPDATE `cadastro de joias` SET `codigo`='$codigo' `nomeJoia`='$nomeJoia',`fabricacao`='$fabricacao',`genero`='$genero',
+`marca`='$marca',`garantia`='$garantia',`preco`='$preco',`precoVenda`='$precoVenda',`quantidade`='$quantidade',`fornecedor`='$fornecedor',
+`modelo`='$modelo',`material`='$material',`tamanho`='$tamanho',`parcelamento`='$parcelamento',`linkImagem`='$linkImagem' WHERE id = 'id' ");
 ?>

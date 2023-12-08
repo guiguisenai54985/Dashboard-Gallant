@@ -22,6 +22,6 @@ $resistencia = $_POST['resistencia'];
 $parcelamento = $_POST['parcelamento'];
 $linkImagem = $_POST['linkImagem'];
 
-$salvar = $conexao -> query("INSERT INTO `cadastro de relogios `(`codigo`, `nomeJoia`, `fabricacao`, `genero`, `marca`, `garantia`, `preco`,`precoVenda`, `quantidade`, `fornecedor`, `modelo`, `material`, `tamanho`,`resistencia`, `parcelamento`,`linkImagem`");
-VALUES ('$codigo', '$nomeJoia', '$fabricacao', '$genero', '$marca', '$garantia',  '$preco', '$precoVenda', '$quantidade', '$fornecedor', '$modelo', '$material', '$tamanho', '$resistencia','$parcelamento', '$linkImagem')");
+$salvar = $conexao -> query("INSERT INTO `cadastro de relogios `(`codigo`, `nomeJoia`, `fabricacao`, `genero`, `marca`, `garantia`, `preco`,`precoVenda`, `quantidade`, `fornecedor`, `modelo`, `material`, `tamanho`,`resistencia`, `parcelamento`,`linkImagem`)
+VALUES ('$codigo', '$nomeJoia', '$fabricacao', '$genero', '$marca', '$garantia', '$preco', '$precoVenda', '$quantidade', '$fornecedor', '$modelo', '$material', '$tamanho', '$resistencia','$parcelamento', '$linkImagem')");
 ?>
