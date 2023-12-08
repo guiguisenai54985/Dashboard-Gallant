@@ -22,7 +22,7 @@
           <th class="table-info"scope="col">Resistencia</th>
           <th class="table-info"scope="col">Parcelamento</th>
           <th class="table-info"scope="col">Imagem</th>
-          <th class="table-info"scope="col">Opições</th>
+          <th class="table-info"scope="col">Opções</th>
         </tr>
       </thead>
       <tbody id="tabela-produto">

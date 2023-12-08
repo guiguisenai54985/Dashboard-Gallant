@@ -60,7 +60,7 @@ var spark1 = {
   xaxis: {
     type: 'datetime',
   },
-  colors: ['#DCE6EC'],
+  colors: ['#332d27'],
   title: {
     text: '$424,652',
     offsetX: 30,
@@ -70,7 +70,7 @@ var spark1 = {
     }
   },
   subtitle: {
-    text: 'Sales',
+    text: 'Vendas',
     offsetX: 30,
     style: {
       fontSize: '14px',
@@ -106,7 +106,7 @@ var spark2 = {
   xaxis: {
     type: 'datetime',
   },
-  colors: ['#DCE6EC'],
+  colors: ['#93ccc6'],
   title: {
     text: '$235,312',
     offsetX: 30,
@@ -116,7 +116,7 @@ var spark2 = {
     }
   },
   subtitle: {
-    text: 'Expenses',
+    text: 'Despesas',
     offsetX: 30,
     style: {
       fontSize: '14px',
@@ -163,7 +163,7 @@ var spark3 = {
     }
   },
   subtitle: {
-    text: 'Profits',
+    text: 'Lucros',
     offsetX: 30,
     style: {
       fontSize: '14px',
@@ -328,7 +328,7 @@ var optionsArea = {
     opacity: 1,
   },
   title: {
-    text: 'Daily Visits Insights',
+    text: 'visitas diárias',
     align: 'left',
     style: {
       fontSize: '18px'
@@ -393,10 +393,10 @@ var optionsBar = {
   },
   colors: colorPalette,
   series: [{
-    name: "Clothing",
+    name: "Relógios",
     data: [42, 52, 16, 55, 59, 51, 45, 32, 26, 33, 44, 51, 42, 56],
   }, {
-    name: "Food Products",
+    name: "Joias",
     data: [6, 12, 4, 7, 5, 3, 6, 4, 3, 3, 5, 6, 7, 4],
   }],
   labels: [10,11,12,13,14,15,16,17,18,19,20,21,22,23],
@@ -461,13 +461,13 @@ var optionDonut = {
   },
   colors: colorPalette,
   title: {
-    text: 'Department Sales',
+    text: 'Departamento de Vendas',
     style: {
       fontSize: '18px'
     }
   },
-  series: [21, 23, 19, 14, 6],
-  labels: ['Clothing', 'Food Products', 'Electronics', 'Kitchen Utility', 'Gardening'],
+  series: [46, 33],
+  labels: ['Relógios', 'Joias',],
   legend: {
     position: 'left',
     offsetY: 80
@@ -509,17 +509,17 @@ var optionsLine = {
   colors: colorPalette,
   series: [
     {
-      name: "Day Time",
+      name: "Dia",
       data: trigoSeries(52, 20)
     },
     {
-      name: "Night Time",
+      name: "Noite",
       data: trigoSeries(52, 27)
     },
   ],
   title: {
     floating: false,
-    text: 'Customers',
+    text: 'Clientes',
     align: 'left',
     style: {
       fontSize: '18px'
