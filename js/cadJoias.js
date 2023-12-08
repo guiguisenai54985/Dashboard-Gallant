@@ -4,16 +4,8 @@ let dadosJoias = document.getElementById('joias');
 //pegando o evento do formulario
 dadosJoias.addEventListener('submit', (event) =>{
     event.preventDefault();
-
     let dados = new FormData(dadosJoias);
-   // console.log(dados);
-
-    //converte os dados para um objeto
-    dados = Object.fromEntries(dados.entries()); 
-
-    //console.log(dados);
     postJoias(dados);
-
 })
 
 function postCliente(dadosJoias) {
@@ -22,9 +14,10 @@ function postCliente(dadosJoias) {
         body: JSON.stringify(dadosJoias)
     })
     .then((result) =>{
-        return result.json();
+        document.getElementById("joia").reset();
+        alert("cadastrado com sucesso");
     }).then((result) =>{
-        cadastrarCliente(result)
+
     }).catch((err) =>{
 
     });
