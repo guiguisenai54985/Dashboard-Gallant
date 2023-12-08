@@ -1,11 +1,27 @@
 <?php
-//permite o acesso ao arquivo de todos os dominios
-header('Access-Control-Allow-Origin: *');
-//define o arquivo para json
-header('Content-Type: application/json');
-//define os metodos de requisitos http
-header('Access-Control-Allow-Methods: POST, GET, DELETE, PUT, PATCH, OPTIONS');
-//recebe os arquivos do tipo json
-$dados = file_get_contents("php://input");
-echo $dados
+error_reporting(E_ERROR ^ E_WARNING);
+require_once "C:/xampp/htdocs/Gallant/backend/functions.php";
+
+dbcon();
+
+$id = $_POST['id'];
+$codigo = $_POST['codigo'];
+$nomeJoia = $_POST['nomeJoia'];
+$fabricacao = $_POST['fabricacao'];
+$genero = $_POST['genero'];
+$marca = $_POST['marca'];
+$garantia = $_POST['garantia'];
+$preco = $_POST['preco'];
+$precoVenda = $_POST['precoVenda'];
+$quantidade = $_POST['quantidade'];
+$fornecedor = $_POST['fornecedor'];
+$modelo = $_POST['modelo'];
+$material = $_POST['material'];
+$tamanho = $_POST['tamanho'];
+$resistencia = $_POST['resistencia'];
+$parcelamento = $_POST['parcelamento'];
+$linkImagem = $_POST['linkImagem'];
+
+$salvar = $conexao -> query("INSERT INTO `cadastro de relogios `(`codigo`, `nomeJoia`, `fabricacao`, `genero`, `marca`, `garantia`, `preco`,`precoVenda`, `quantidade`, `fornecedor`, `modelo`, `material`, `tamanho`,`resistencia`, `parcelamento`,`linkImagem`");
+VALUES ('$codigo', '$nomeJoia', '$fabricacao', '$genero', '$marca', '$garantia',  '$preco', '$precoVenda', '$quantidade', '$fornecedor', '$modelo', '$material', '$tamanho', '$resistencia','$parcelamento', '$linkImagem')");
 ?>
