@@ -17,7 +17,7 @@ dadosJoias.addEventListener('submit', (event) =>{
 })
 
 function postCliente(dadosJoias) {
-    fetch('http://localhost/Gallant/admin/ajax/cad-joias.php',{
+    fetch('http://localhost/Dashboard-gallant/admin/ajax/cad-joias.php',{
         method: 'POST',
         body: JSON.stringify(dadosJoias)
     })

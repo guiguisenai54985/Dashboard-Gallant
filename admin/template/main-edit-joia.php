@@ -1,39 +1,39 @@
 <?php
-$cliente_id = $_GET['id'];
+$joias_id = $_GET['id'];
 require_once "C:/xampp/htdocs/backend/functions.php";
 dbcon();
-$resultado = $conexao->query("SELECT `id`, `nome`, `sobrenome`, `data_nascimento`, `telefone`, `cpf`, `email`, `cep`, `rua`, `numero`, `bairro`, `cidade`, `estado`, `pais`, `ibge`, `observacao` 
-FROM usuario WHERE id = '$cliente_id' ");
+$resultado = $conexao->query("SELECT `id`,`codigo`, `nomeJoia`, `fabricacao`, `genero`, `marca`, `garantia`, `preco`, `precoVenda`, `quantidade`, `fornecedor`, `modelo`, `material`, `tamanho`, `parcelamento`,`linkImagem` 
+FROM cadastro de joias WHERE id = '$joias_id' ");
 
-$cliente = mysqli_fetch_assoc($resultado);
+$joias = mysqli_fetch_assoc($resultado);
 ?>
 
 <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Cadastrar Cliente</h1>
+        <h1 class="h2">Cadastrado de Joias</h1>
     </div>
     <div class="">
-        <form id="edit_cliente" name="edit_cliente" action="" method="post" class="form-control">
-            <input id="id" name="id" value="<?=$cliente['id']?>" type="hidden">
-            <legend>Dados Pessoais</legend>
+        <form id="edit_joias" name="edit_joias" action="" method="post" class="form-control">
+            <input id="id" name="id" value="<?=$joias['id']?>" type="hidden">
+            <legend>Dados</legend>
             <div class="row">
                 <div class="col-md-5">
-                    <label for="nome">Nome:</label>
-                    <input class="form-control" type="text" name="nome" id="nome" value="<?= $cliente['nome'] ?>">
+                    <label for="codigo">Código:</label>
+                    <input class="form-control" type="text" name="codigo" id="codigo" value= " <?= $joias['codigo'] ?>"></input>
                 </div>
                 <div class="col-md-5">
-                    <label for="sobrenome">Sobrenome:</label>
-                    <input class="form-control" type="text" name="sobrenome" id="sobrenome" value="<?= $cliente['sobrenome'] ?>">
+                    <label for="nomeJoia">Nome:</label>
+                    <input class="form-control" type="text" name="nomeJoia" id="nomeJoia" value= "<?= $joias['nomeJoia'] ?>"></input>
                 </div>
                 <div class="col-md-2">
-                    <label for="nascimento">Data Nascimento:</label>
-                    <input class="form-control" type="date" name="nascimento" id="nascimento" value="<?= $cliente['data_nascimento'] ?>">
+                    <label for="fabricacao">Fabricação:</label>
+                    <input class="form-control" type="date" name="fabricacao" id="fabricacao" value= "<?= $joias['fabricacao'] ?>"></input>
                 </div>
             </div>
             <div class="row mt-2">
                 <div class="col-md-3">
-                    <label for="telefone">Telefone:</label>
-                    <input class="form-control" type="text" name="telefone" id="telefone" value="<?= $cliente['telefone'] ?>">
+                    <label for="genero">Gênero:</label>
+                    <input class="form-control" type="text" name="genero" id="genero" value="<?= $joias['genero'] ?>"></input>
                 </div>
                 <div class="col-md-3">
                     <label for="cpf">Cpf:</label>
@@ -91,7 +91,7 @@ $cliente = mysqli_fetch_assoc($resultado);
                 <div class="col-md-3">
                     <button class="btn btn-dark" type="submit">
                         <i class="bi bi-database-up me-1"></i>
-                        Editar Cliente
+                        Editar
                     </button>
                 </div>
             </div>

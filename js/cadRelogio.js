@@ -18,7 +18,7 @@ dadosRelogios.addEventListener('submit', (event) =>{
 })
 
 function postCliente(dadosrelogios) {
-    fetch('http://localhost/Gallant/admin/ajax/cad-relogio.php',{
+    fetch('http://localhost/Dashboard-gallant/admin/ajax/cad-relogio.php',{
         method: 'POST',
         body: JSON.stringify(dadosrelogios)
     })
