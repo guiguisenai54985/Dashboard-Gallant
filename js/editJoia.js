@@ -1,4 +1,3 @@
-
 // buscando os dados do formulario
 let updateJoias = document.getElementById('edit_joias');
 

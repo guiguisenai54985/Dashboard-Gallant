@@ -1,4 +1,3 @@
-
 // buscando os dados do formulario
 let updateRelogio = document.getElementById('edit_relogio');
 

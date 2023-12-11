@@ -3,7 +3,7 @@ $joias_id = $_GET['id'];
 require_once "C:/xampp/htdocs/backend/functions.php";
 dbcon();
 $resultado = $conexao->query("SELECT `id`,`codigo`, `nomeJoia`, `fabricacao`, `genero`, `marca`, `garantia`, `preco`, `precoVenda`, `quantidade`, `fornecedor`, `modelo`, `material`, `tamanho`, `parcelamento`,`linkImagem` 
-FROM cadastro de joias WHERE id = '$joias_id' ");
+FROM joia WHERE id = '$joias_id' ");
 
 $joias = mysqli_fetch_assoc($resultado);
 ?>

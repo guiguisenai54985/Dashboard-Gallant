@@ -54,7 +54,7 @@ $resultado = $conexao->query("SELECT  `id`, `codigo`, `nomeRelogio`, `fabricacao
        <td><a href="http://localhost/Dashboard-Gallant/admin/listarJoias.php?id=<?=$dados['id']?>" class ="bi bi-pencil-square"></a>
        <a class ="ms-1 bi bi-trash"></a>
     </td>
- </tr>;
+ </tr>
 
 <?php
     }
