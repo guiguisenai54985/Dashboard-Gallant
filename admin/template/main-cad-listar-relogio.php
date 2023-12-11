@@ -51,8 +51,8 @@ $resultado = $conexao->query("SELECT  `id`, `codigo`, `nomeRelogio`, `fabricacao
        <td><?=$dados['parcela']?>
        <td><?=$dados['resistencia']?>
        <td><?=$dados['linkImagem']?>
-       <td><a href="http://localhost/Dashboard-Gallant/admin/listarJoias.php?id=<?=$dados['id']?>" class ="bi bi-pencil-square"></a>
-       <a class ="ms-1 bi bi-trash"></a>
+       <td><a href="http://localhost/Dashboard-Gallant/admin/editRelogio.php?id=<?=$dados['id']?>" class ="bi bi-pencil-square"></a>
+       <a onclick="excluirRelogio(this)" id="<?=$dados['id']?>" name="<?=$dados['id']?>" class ="ms-1 bi bi-trash"></a>
     </td>
  </tr>
 

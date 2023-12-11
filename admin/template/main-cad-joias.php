@@ -1,12 +1,13 @@
 <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-      <h1 class="h2">Cadastrar</h1>
+      <h1 class="h2">Cadastrar joias</h1>
     </div>
   <div class="container">
     <form id="joias" name="joias" action="" method="post" class = "form-control">
       <legend>Dados do Produto</legend>
       <div class = "row">
         <div class="col-md-2">
+          <!--`modelo`, `material`, `tamanho`, `parcela`, `linkImagem`-->
           <label for = "codigo">Código:</label>
           <input class = "form-control" type = "text" name = "codigo" id="codigo" value = ""></input>
         </div>
@@ -22,7 +23,6 @@
           <label for = "genero">Gênero:</label>
           <input class = "form-control" type = "text" name = "genero" id="genero" value = ""></input>
         </div>
-
       </div>
       <div class = "row mt-2">
         <div class="col-md-4">
@@ -47,7 +47,7 @@
         </div>
         <div class="col-md-3">
           <label for = "fornecedor">Fornecedor:</label>
-          <input class = "form-control" type = "text" name = "foencedor" id="fonecedor" value = ""></input>
+          <input class = "form-control" type = "text" name = "fornecedor" id="fornecedor" value = ""></input>
         </div>
         <div class="col-md-3">
           <label for = "modelo">Modelo:</label>
@@ -66,8 +66,8 @@
           <input class = "form-control" type = "text" name = "parcelamento" id="parcelamento" value = ""></input>
         </div>
         <div class="col-md-3">
-          <label for = "imagem">Link da imagem:</label>
-          <input class = "form-control" type = "text" name = "imagem" id="imagem" value = ""></input>
+          <label for = "linkImagem">Link da imagem:</label>
+          <input class = "form-control" type = "text" name = "linkImagem" id="linkImagem" value = ""></input>
         </div>
       </div>
       <br>

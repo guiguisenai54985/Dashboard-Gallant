@@ -4,14 +4,16 @@ let dadosJoias = document.getElementById('joias');
 //pegando o evento do formulario
 dadosJoias.addEventListener('submit', (event) =>{
     event.preventDefault();
-    let dados = new FormData(dadosJoias);
-    postJoias(dados);
+    
+    let dadosCadastroJoias = new FormData(dadosJoias); 
+
+    postCadJoias(dadosCadastroJoias);
 })
 
-function postJoias(dadosJoias) {
+function postCdaJoias(dadosJoiasPost) {
     fetch('http://localhost/Dashboard-gallant/admin/ajax/cad-joias.php',{
         method: 'POST',
-        body: JSON.stringify(dadosJoias)
+        body: dadosJoiasPost
     })
     .then((result) =>{
         document.getElementById("joias").reset();

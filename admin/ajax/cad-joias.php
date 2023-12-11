@@ -1,10 +1,9 @@
 <?php
 error_reporting(E_ERROR ^ E_WARNING);
-require_once "C:/xampp/htdocs/Dashboard-Gallant/backend/functions.php";
+require_once "C:/xampp/htdocs/Dashboard-Gallant/admin/backend/functions.php";
 
 dbcon();
 
-$id = $_POST['id'];
 $codigo = $_POST['codigo'];
 $nomeJoia = $_POST['nomeJoia'];
 $fabricacao = $_POST['fabricacao'];
@@ -13,14 +12,13 @@ $marca = $_POST['marca'];
 $garantia = $_POST['garantia'];
 $preco = $_POST['preco'];
 $precoVenda = $_POST['precoVenda'];
-$quantidade = $_POST['quantidade'];
+$quant = $_POST['quant'];
 $fornecedor = $_POST['fornecedor'];
 $modelo = $_POST['modelo'];
 $material = $_POST['material'];
 $tamanho = $_POST['tamanho'];
-$parcelamento = $_POST['parcelamento'];
+$parcela = $_POST['parcela'];
 $linkImagem = $_POST['linkImagem'];
 
-$salvar = $conexao -> query("INSERT INTO `cadastro de joias `(`codigo`, `nomeJoia`, `fabricacao`, `genero`, `marca`, `garantia`, `preco`,`precoVenda`, `quantidade`, `fornecedor`, `modelo`, `material`, `tamanho`, `parcelamento`,`linkImagem`)
-VALUES ('$codigo', '$nomeJoia', '$fabricacao', '$genero', '$marca', '$garantia',  '$preco', '$precoVenda', '$quantidade', '$fornecedor', '$modelo', '$material', '$tamanho', '$parcelamento', '$linkImagem')");
+$salvar = $conexao -> query("INSERT INTO `joia`(`codigo`, `nomeJoia`, `fabricacao`, `genero`, `marca`, `garantia`, `preco`, `precoVenda`, `quant`, `fornecedor`, `modelo`, `material`, `tamanho`, `parcela`, `linkImagem`) VALUES ('$codigo','$nomeJoia','$fabricacao','$genero','$marca','$garantia','$preco','$precoVenda','$quant','$fornecedor','$modelo','$material',''$tamanho,'$parcela','$linkImagem')");
 ?>

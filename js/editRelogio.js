@@ -4,23 +4,23 @@ let updateRelogio = document.getElementById('edit_relogio');
 // pegando o evento de envio do formulario
 updateRelogio.addEventListener('submit', (event) => {
     event.preventDefault();
-    let dados = new FormData(updateRelogio);
+    let dadosAtualizaRelogio = new FormData(updateRelogio);
 
-    postRelogio(dados);
+    postEditRelogio(dadosAtualizaRelogio);
 })
 
-function postCliente(updateRelogio) {
+function postEditRelogio(updateRelogioPost) {
     fetch('http://localhost/Dashboard-Gallant/admin/ajax/edit-relogio.php', {
         method: 'POST',
-        body: updateRelogio
+        body: updateRelogioPost
     })
         .then((result) => {
+        alert("Dados atualizados com sucesso");    
         location.reload();  
-        return result.json();
+    
     })
     .then((result) => {
        
-        cadastrarRelogio(result);
     
     }
     )  
@@ -31,14 +31,16 @@ function postCliente(updateRelogio) {
 
 function excluirRelogio(event) {
    
-
+    let relogioId = new URLSearchParams();
+    relogioId.append('id', event.id);
 
       fetch('http://localhost/Dashboard-Gallant/admin/ajax/excluir-relogio.php', {
         method: 'POST',
-        body: event.id
+        body: relogioId
     })
         .then((result) => {
-        
+            alert("Excluido com sucesso!");
+            location.reload();  
     })
     .then((result) => {
     

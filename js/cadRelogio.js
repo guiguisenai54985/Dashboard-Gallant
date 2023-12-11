@@ -5,13 +5,13 @@ let dadosRelogios = document.getElementById('relogio');
 dadosRelogios.addEventListener('submit', (event) =>{
     event.preventDefault();
 
-    let dados = new FormData(dadosRelogio);
+    let dadosCadastroRelogio = new FormData(dadosRelogios);
 
-    postRelogio(dados);
+    postCadastroRelogio(dadosCadastroRelogio);
 
 })
 
-function postRelogio(dadosrelogios) {
+function postCadastroRelogio(dadosrelogios) {
     fetch('http://localhost/Dashboard-gallant/admin/ajax/cad-relogio.php',{
         method: 'POST',
         body: dadosrelogios

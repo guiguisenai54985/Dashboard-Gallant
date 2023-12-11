@@ -11,21 +11,21 @@
           <input class = "form-control" type = "text" name = "codigo" id="codigo" value = ""></input>
         </div>
         <div class="col-md-5">
-          <label for = "nomerelogio">Nome do relógio:</label>
-          <input class = "form-control" type = "text" name = "nomerelogio" id="nomerelogio" value = ""></input>
-        </div>
-        <div class="col-md-2">
-          <label for = "genero">Gênero:</label>
-          <input class = "form-control" type = "text" name = "genero" id="genero" value = ""></input>
+          <label for = "nomeRelogio">Nome do relógio:</label>
+          <input class = "form-control" type = "text" name = "nomeRelogio" id="nomeRelogio" value = ""></input>
         </div>
         <div class="col-md-2">
           <label for = "fabricacao">Ano de fabricação:</label>
           <input class = "form-control" type = "date" name = "fabricacao" id="fabricacao" value = ""></input>
         </div>
+        <div class="col-md-2">
+          <label for = "genero">Gênero:</label>
+          <input class = "form-control" type = "text" name = "genero" id="genero" value = ""></input>
+        </div>
       </div>
       <div class = "row mt-2">
         <div class="col-md-4">
-          <label for = "marca">Marca da relógio:</label>
+          <label for = "marca">Marca:</label>
           <input class = "form-control" type = "text" name = "marca" id="marca" value = ""></input>
         </div>
         <div class="col-md-2">
@@ -38,15 +38,15 @@
         </div>
         <div class="col-md-3">
           <label for = "precoVenda">Preço de venda:</label>
-          <input class = "form-control" type = "text" name = "precovenda" id="precovenda" value = ""></input>
+          <input class = "form-control" type = "text" name = "precoVenda" id="precoVenda" value = ""></input>
         </div>
         <div class="col-md-2">
-          <label for = "quantidade">Quantidade:</label>
-          <input class = "form-control" type = "text" name = "quantidade" id="quantidade" value = ""></input>
+          <label for = "quant">Quantidade:</label>
+          <input class = "form-control" type = "text" name = "quant" id="quant" value = ""></input>
         </div>
         <div class="col-md-3">
           <label for = "fornecedor">Fornecedor:</label>
-          <input class = "form-control" type = "text" name = "foencedor" id="fonecedor" value = ""></input>
+          <input class = "form-control" type = "text" name = "fornecedor" id="fornecedor" value = ""></input>
         </div>
         <div class="col-md-3">
           <label for = "modelo">Modelo:</label>
@@ -61,16 +61,16 @@
           <input class = "form-control" type = "text" name = "tamanho" id="tamanho" value = ""></input>
         </div>
         <div class="col-md-3">
+          <label for = "parcela">Parcelamento:</label>
+          <input class = "form-control" type = "text" name = "parcela" id="parcela" value = ""></input>
+        </div>
+        <div class="col-md-3">
           <label for = "resistencia">Resistência:</label>
           <input class = "form-control" type = "text" name = "resistencia" id="resistencia" value = ""></input>
         </div>
         <div class="col-md-3">
-          <label for = "parcelamento">Parcelamento:</label>
-          <input class = "form-control" type = "text" name = "parcelamento" id="parcelamento" value = ""></input>
-        </div>
-        <div class="col-md-3">
-          <label for = "imagem">Link da imagem:</label>
-          <input class = "form-control" type = "text" name = "imagem" id="imagem" value = ""></input>
+          <label for = "linkImagem">Link da imagem:</label>
+          <input class = "form-control" type = "text" name = "linkImagem" id="linkImagem" value = ""></input>
         </div>
       </div>
       <br>

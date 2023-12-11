@@ -12,14 +12,14 @@ $marca = $_POST['marca'];
 $garantia = $_POST['garantia'];
 $preco = $_POST['preco'];
 $precoVenda = $_POST['precoVenda'];
-$quantidade = $_POST['quantidade'];
+$quant = $_POST['quant'];
 $fornecedor = $_POST['fornecedor'];
 $modelo = $_POST['modelo'];
 $material = $_POST['material'];
 $tamanho = $_POST['tamanho'];
+$parcela = $_POST['parcela'];
 $resistencia = $_POST['resistencia'];
-$parcelamento = $_POST['parcelamento'];
 $linkImagem = $_POST['linkImagem'];
 
-$salvar = $conexao -> query("UPDATE `cadastro de relogios` SET `codigo`='$codigo' `nomeRelogio`='$nomeRelogio',`fabricacao`='$fabricacao',`genero`='$genero',`marca`='$marca',`garantia`='$garantia',`preco`='$preco',`precoVenda`='$precoVenda',`quantidade`='$quantidade',`fornecedor`='$fornecedor',`modelo`='$modelo',`material`='$material',`tamanho`='$tamanho',`resistencia`= '$resistencia',`parcelamento`='$parcelamento', `linkImagem`='$linkImagem' WHERE id = 'id' ");
+$salvar = $conexao -> query("UPDATE `relogio` SET `codigo`='$codigo', `nomeRelogio`='$nomeRelogio',`fabricacao`='$fabricacao',`genero`='$genero',`marca`='$marca',`garantia`='$garantia',`preco`='$preco',`precoVenda`='$precoVenda',`quant`='$quant',`fornecedor`='$fornecedor',`modelo`='$modelo',`material`='$material',`tamanho`='$tamanho',`parcela`='$parcela', `resistencia`= '$resistencia', `linkImagem`='$linkImagem' WHERE id = '$id' ");
 ?>
