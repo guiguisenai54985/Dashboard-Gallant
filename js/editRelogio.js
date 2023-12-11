@@ -1,11 +1,11 @@
 
 // buscando os dados do formulario
-let updateCliente = document.getElementById('edit_relogio');
+let updateRelogio = document.getElementById('edit_relogio');
 
 // pegando o evento de envio do formulario
-updateCliente.addEventListener('submit', (event) => {
+updateRelogio.addEventListener('submit', (event) => {
     event.preventDefault();
-    let dados = new FormData(updateCliente);
+    let dados = new FormData(updateRelogio);
 
     postRelogio(dados);
 })
@@ -16,7 +16,6 @@ function postCliente(updateRelogio) {
         body: updateRelogio
     })
         .then((result) => {
-            //console.log(result);
         location.reload();  
         return result.json();
     })
@@ -31,7 +30,7 @@ function postCliente(updateRelogio) {
     });
 }
 
-function excluirCliente(event) {
+function excluirRelogio(event) {
    
 
 

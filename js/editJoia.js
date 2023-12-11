@@ -1,28 +1,27 @@
 
 // buscando os dados do formulario
-let updateCliente = document.getElementById('edit_joia');
+let updateJoias = document.getElementById('edit_joias');
 
 // pegando o evento de envio do formulario
-updateCliente.addEventListener('submit', (event) => {
+updateJoias.addEventListener('submit', (event) => {
     event.preventDefault();
-    let dados = new FormData(updateJoia);
+    let dados = new FormData(updateJoias);
 
-    postJoia(dados);
+    postJoias(dados);
 })
 
-function postCliente(updateJoia) {
+function postJoias(updateJoia) {
     fetch('http://localhost/Dashboard-Gallant/admin/ajax/edit-joias.php', {
         method: 'POST',
         body: updateJoia
     })
         .then((result) => {
-            //console.log(result);
         location.reload();  
         return result.json();
     })
     .then((result) => {
        
-        cadastrarJoia(result);
+        cadastrarJoias(result);
     
     }
     )  
@@ -31,7 +30,7 @@ function postCliente(updateJoia) {
     });
 }
 
-function excluirJoia(event) {
+function excluirJoias(event) {
    
     let joiasId = new URLSearchParams();
     joiasId.append('id', event.id);
@@ -41,7 +40,7 @@ function excluirJoia(event) {
       body: joiasId
   })
       .then((result) => {
-          alert("Ecluido com sucesso!");
+          alert("Excluido com sucesso!");
           location.reload();  
       
   })
